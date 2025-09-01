@@ -1,7 +1,7 @@
 console.log("Bienvenido a la calculadora")
 console.log("Ingrese dos numeros")
-let first_number = Number(prompt("Primer numero (El mayor)"));
-let second_number = Number(prompt("Segundo numero (El menor)"));
+let first_number = Number(prompt("Primer numero"));
+let second_number = Number(prompt("Segundo numero"));
 console.log(first_number, second_number)
 console.log("1. sumar")
 console.log("2. restar")
@@ -28,19 +28,26 @@ let resultado;
 if (opcion == 1) {
     resultado = first_number + second_number;
     console.log("Resultado de la suma:", resultado);
+    alert("Resultado de la suma:", resultado);
 } else if (opcion == 2) {
     resultado = first_number - second_number; 
     console.log("Resultado de la resta:", resultado);
+    alert("Resultado de la resta:", resultado);
 } else if (opcion == 3) {
     resultado = first_number * second_number; 
     console.log("Resultado de la multiplicación:", resultado);
+    alert("Resultado de la multiplicación:", resultado);
 } else if (opcion == 4) {
     if (second_number == 0) {
         console.log("Error: no se puede dividir entre 0.");
+        alert("Error: no se puede dividir entre 0.");
     } else {
         resultado = first_number / second_number; 
         console.log("Resultado de la división:", resultado);
+        alert("Resultado de la división:", resultado);
     }
 } else {
     console.log("Opción inválida. Elegí 1, 2, 3 o 4.");
+    alert("Opción inválida. Elegí 1, 2, 3 o 4.");
 }
+
