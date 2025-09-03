@@ -37,7 +37,7 @@ switch (opcion) {
 
         // Validar que el nombre no esté vacío, no contenga espacios ni números, y que la edad sea un número positivo.
         if (!nombre || nombre.trim() === "" || nombre.includes(" ") || /[0-9]/.test(nombre) || isNaN(edad) || edad <= 0) {
-            alert("Error: el nombre no debe tener espacios ni números y la edad debe ser positiva.");
+            alert("Error: el nombre no debe tener espacios ni números, debe ser valido y la edad debe ser positiva.");
         } else {
             console.log(`Hola ${nombre}, tienes ${edad} años.`);
         }
