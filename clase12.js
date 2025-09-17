@@ -29,7 +29,7 @@ coche.apagar();
 
 const cuenta = {
     titular: "Pepito" ,
-    saldo: 0,
+    saldo: 50000,
     depositar(monto){
         if(isNaN(Number(monto))){
             console.log("Error: debe ingresar un número.");
