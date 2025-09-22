@@ -2,9 +2,9 @@ const libro = {
     titulo: "El Principito",
     autor: "Antoine de Saint-Exupéry",
     año: 1943,
-   mostrarInfo() {
-    console.log(`${this.titulo} - ${this.autor} (${this.año})`);
-  }
+    mostrarInfo() {
+        console.log(`${this.titulo} - ${this.autor} (${this.año})`);
+    }
 };
 
 libro.mostrarInfo();
