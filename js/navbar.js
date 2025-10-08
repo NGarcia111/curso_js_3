@@ -1,4 +1,4 @@
-const titulos = ["Index", "Pantalones", "Camisas", "Zapatos"]
+const titulos = ["Index"]
 
 let menu = [];
 for (let titulo of titulos) {
