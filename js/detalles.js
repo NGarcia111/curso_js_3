@@ -18,6 +18,5 @@ if (producto) {
     
     <br>
     <a href="index.html">← Volver al catálogo</a>
-    </div>
-`;
+    </div>`;
 }
