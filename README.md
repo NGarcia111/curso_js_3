@@ -3,13 +3,13 @@
 
 ## 📚 Índice de Clases
 
-- [Clase 7 - Estructuras de Control I](CLASES/Clase%207%20-%20Estructuras%20de%20Control%20I)
-- [Clase 8 - Estructuras de Control II](CLASES/Clase%208%20-%20Estructuras%20de%20Control%20II)
-- [Clase 10 - Funciones](CLASES/Clase%2010%20-%20Funciones)
-- [Clase 11 - Objetos](CLASES/Clase%2011%20-%20Objetos)
-- [Clase 12 - Más ejercicios de Objetos](CLASES/Clase%2012%20-%20Más%20ejercicios%20de%20Objetos)
-- [Clase 13 - Arrays](CLASES/Clase%2013%20-%20Arrays)
-- [Métodos ArrayClase 15](CLASES/Métodos%20ArrayClase%2015)
+- [Clase 7 - Estructuras de Control I](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%207%20-%20Estructuras%20de%20Control%20I)
+- [Clase 8 - Estructuras de Control II](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%208%20-%20Estructuras%20de%20Control%20II)
+- [Clase 10 - Funciones](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%2010%20-%20Funciones)
+- [Clase 11 - Objetos](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%2011%20-%20Objetos)
+- [Clase 12 - Más ejercicios de Objetos](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%2012%20-%20Más%20ejercicios%20de%20Objetos)
+- [Clase 13 - Arrays](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Clase%2013%20-%20Arrays)
+- [Métodos ArrayClase 15](https://github.com/NGarcia111/curso_js_3/tree/ejercicios/CLASES/Métodos%20ArrayClase%2015)
 
 
  ## 🧪 Ejercicios por clase
