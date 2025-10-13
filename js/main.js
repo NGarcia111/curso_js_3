@@ -1,22 +1,20 @@
 const main = document.querySelector("main");
 const buscador = document.getElementById("buscador");
-const btnBuscar = document.getElementById("btn-buscar");
-const listaCategoria = document.querySelector('section ul');
+const btnLimpiar = document.getElementById("btn-limpiar");
+const listaCategoria = document.getElementById("category");
 
 const categoriasBtn = categorylist.map(categoria => {
-    return `<li><button class="category-btn" data-category="${categoria}">${categoria}</button></li>`;
+    return `<li><button class="category-btn" onclick="filtrarYMostrar('${categoria}')">${categoria}</button></li>`;
 });
 
 listaCategoria.innerHTML = categoriasBtn.join("");
 
-// Agregar event listeners a los botones de categoría
-listaCategoria.addEventListener("click", (e) => {
-    if (e.target.classList.contains("category-btn")) {
-        const categoria = e.target.dataset.category;
-        const productosFiltrados = filtrarPorCategoria(categoria);
-        mostrarCards(productosFiltrados);
-    }
-});
+// Función que se llama desde el onclick
+function filtrarYMostrar(categoria) {
+    const productosFiltrados = filtrarPorCategoria(categoria);
+    mostrarCards(productosFiltrados);
+};
+
 
 function filtrarPorCategoria(categoria) {
     if (categoria === "Todos") {
@@ -24,8 +22,8 @@ function filtrarPorCategoria(categoria) {
     }
     return newdata.filter(producto =>
         producto.category.includes(categoria)
-    );
-}
+    )
+};
 
 // Función para renderizar las tarjetas
 function mostrarCards(productos) {
@@ -43,18 +41,26 @@ function mostrarCards(productos) {
         `;
     });
     main.innerHTML = cards.join("");
-}
+};
 
-mostrarCards(newdata)
-
+mostrarCards(newdata);
 
 function realizarBusqueda() {
     const terminoBusqueda = buscador.value.toLowerCase();
     const filtrados = newdata.filter(elemento =>
+        elemento.name.toLowerCase().includes(terminoBusqueda) ||
+        elemento.short_description.toLowerCase().includes(terminoBusqueda) ||
         elemento.long_description.toLowerCase().includes(terminoBusqueda) ||
-        elemento.name.toLowerCase().includes(terminoBusqueda)
+        elemento.category.some(categoria => categoria.toLowerCase().includes(terminoBusqueda))
     );
     mostrarCards(filtrados);
 }
 
 buscador.addEventListener("input", realizarBusqueda);
+
+// Función para limpiar el buscador
+btnLimpiar.addEventListener("click", () => {
+    buscador.value = ""; // Limpiar el input
+    mostrarCards(newdata); // Mostrar todos los productos
+    buscador.focus(); // Pone el foco de vuelta en el input
+});
