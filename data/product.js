@@ -37,7 +37,7 @@ const newdata = [
     {
         id: 2,
         name: "Destornillador Philips",
-        url: "https://www.pvcdelcaribe.com/cdn/shop/products/DESTORNILLADOR-PHILLIPS-1-4-6-KANGARO_37db6a87-3c90-4ca0-8724-b65de6d469aa_1080x1080.jpg?v=1678223265",
+        url: "https://cdn1.totalcommerce.cloud/metropolis/product-zoom/es/destornillador-punta-phillips-%232-4-%28stht69145%29-stanley-2.webp",
         price: 12000,
         category: ["Herramientas"],
         short_description: "Destornillador de punta cruz tamaño mediano.",
@@ -163,7 +163,7 @@ const newdata = [
     {
         id: 16,
         name: "Lámpara de escritorio LED",
-        url: "https://example.com/img/lampara_led.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uEwDq8pXpHD9zWxctlIDdlgq0u1VK3ukPQ&s",
         price: 129000,
         category: ["Hogar", "Día a día"],
         short_description: "Lámpara regulable con luz blanca cálida y fría.",
@@ -172,7 +172,7 @@ const newdata = [
     {
         id: 17,
         name: "Batidora de mano",
-        url: "https://example.com/img/batidora_mano.jpg",
+        url: "https://exitocol.vtexassets.com/arquivos/ids/18851383/batidora-de-mano-oster-de-5-velocidades-2499.jpg?v=638217692439330000",
         price: 99000,
         category: ["Electrodoméstico", "Cocina"],
         short_description: "Batidora ligera de 2 velocidades con accesorios.",
@@ -181,7 +181,7 @@ const newdata = [
     {
         id: 18,
         name: "Guantes de limpieza reforzados",
-        url: "https://example.com/img/guantes_limpieza.jpg",
+        url: "https://http2.mlstatic.com/D_NQ_NP_648473-MLM41362723222_042020-O.webp",
         price: 9500,
         category: ["Limpieza"],
         short_description: "Guantes de goma gruesa con forro interior suave.",
@@ -190,7 +190,7 @@ const newdata = [
     {
         id: 19,
         name: "Organizador de escritorio",
-        url: "https://example.com/img/organizador_escritorio.jpg",
+        url: "https://media.falabella.com/sodimacCO/874133_01/w=800,h=800,fit=pad",
         price: 34000,
         category: ["Hogar", "Día a día"],
         short_description: "Organizador de madera con compartimientos múltiples.",
@@ -198,8 +198,8 @@ const newdata = [
     },
     {
         id: 20,
-        name: "Ventilador de mesa 12”",
-        url: "https://example.com/img/ventilador_mesa.jpg",
+        name: "Ventilador de mesa",
+        url: "https://m.media-amazon.com/images/I/71NYZsZzB7L._UF894,1000_QL80_.jpg",
         price: 159000,
         category: ["Electrodoméstico", "Hogar"],
         short_description: "Ventilador compacto con tres velocidades.",
@@ -208,7 +208,7 @@ const newdata = [
     {
         id: 21,
         name: "Tendedero plegable de aluminio",
-        url: "https://example.com/img/tendedero.jpg",
+        url: "https://media.falabella.com/sodimacCO/719136/public",
         price: 135000,
         category: ["Hogar", "Limpieza"],
         short_description: "Tendedero liviano con alas plegables.",
@@ -217,7 +217,7 @@ const newdata = [
     {
         id: 22,
         name: "Juego de llaves combinadas",
-        url: "https://example.com/img/llaves_combinadas.jpg",
+        url: "https://www.sata.com.co/sites/sata_colombia/files/styles/product_medium/public/pim_images/SAT_ST09021SJ_IMG-INSTOR.jpg?itok=rEbPo9h1",
         price: 89000,
         category: ["Herramientas"],
         short_description: "Set de 10 llaves de acero al cromo-vanadio.",
@@ -226,7 +226,7 @@ const newdata = [
     {
         id: 23,
         name: "Termo de acero inoxidable 1L",
-        url: "https://example.com/img/termo_acero.jpg",
+        url: "https://http2.mlstatic.com/D_NQ_NP_673848-MLA44634164362_012021-O.webp",
         price: 62000,
         category: ["Día a día", "Hogar"],
         short_description: "Termo con tapa hermética y retención de temperatura.",
@@ -235,7 +235,7 @@ const newdata = [
     {
         id: 24,
         name: "Set de platos de cerámica",
-        url: "https://example.com/img/platos_ceramica.jpg",
+        url: "https://m.media-amazon.com/images/I/61zD9AJqIEL._UF894,1000_QL80_.jpg",
         price: 199000,
         category: ["Cocina", "Hogar"],
         short_description: "Juego de 12 platos decorativos.",
@@ -244,7 +244,7 @@ const newdata = [
     {
         id: 25,
         name: "Linterna recargable LED",
-        url: "https://example.com/img/linterna_led.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJZ1a9-z5lbs3uBygbYUnODPhKRA-rEcuRBg&s",
         price: 54000,
         category: ["Herramientas", "Día a día"],
         short_description: "Linterna compacta con batería recargable USB.",
