@@ -15,7 +15,8 @@ header {
     background: linear-gradient(135deg, #011938, #378cf4);
     color: white;
     padding: 30px 20px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
+    /* quitar espacio para que section esté pegada */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -104,6 +105,16 @@ main {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+
+/* Hacer que la sección que contiene #category esté pegada al header
+   y comparta el mismo ancho máximo visual. */
+section {
+    margin-top: 0;
+    /* pegada al header */
+    display: flex;
+    justify-content: center;
+    /* centra el contenedor dentro del ancho global */
 }
 
 .card:hover {
@@ -226,4 +237,53 @@ main {
 
 .detalle-card a:hover {
     background-color: #0072ff;
+}
+
+/* --- Estilos para contenedor de categorías --- */
+/* En el HTML `#category` es el propio <ul>, no un contenedor padre con un <ul> dentro. */
+#category {
+    /* Contenedor principal de categorías: ancho consistente con header */
+    text-align: left;
+    /* por defecto el contenido (botones) alineados a la izquierda */
+    padding: 14px 18px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 0 auto 18px auto;
+    max-width: 1100px;
+    /* coincide con el max-width que usamos en header/section */
+    border-radius: 0 0 12px 12px;
+    /* apariencia de continuación del header */
+
+    /* Layout interno */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* alinear a la izquierda */
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+}
+
+/* Botones de categoría */
+.category-btn {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    color: #222;
+    border: 1px solid #d6dce3;
+    border-radius: 999px;
+    /* pill */
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.category-btn:hover,
+.category-btn:focus {
+    background-color: #e9f0ff;
+    border-color: #9fb7ff;
+    transform: translateY(-3px);
+    outline: none;
+    box-shadow: 0 6px 16px rgba(0, 82, 204, 0.12);
 }
