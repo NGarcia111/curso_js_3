@@ -1,23 +1,21 @@
 /*  --- Estilo general --- */
 body {
-    background-image: url('https://images.unsplash.com/photo-1553856419-a810dcf9e2d2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    /* Evita que se repita */
-}
+     /* Degradado diagonal de color morado a rosa */
+    background: linear-gradient(135deg, #f1f1f1, #576070);
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
 
 
 header {
     text-align: center;
-    background: linear-gradient(135deg, #011938, #378cf4);
-    color: white;
-    padding: 30px 20px;
-    margin-bottom: 0;
+    background: linear-gradient(135deg, #909cab, #378cf4);
+    color: rgb(20, 19, 85);
+    padding: 40px;
+    margin-bottom: 0px;
     /* quitar espacio para que section esté pegada */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(6, 8, 15, 0.149);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +31,7 @@ nav ul {
 h1 {
     margin: 0;
     font-size: 2.2rem;
-    font-weight: 600;
+    font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -82,11 +80,11 @@ h1 {
 /* --- Contenedor principal --- */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
     gap: 25px;
-    padding: 40px;
+    padding: 30px;
     justify-items: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 
@@ -94,10 +92,10 @@ main {
 /* --- Tarjeta de producto --- */
 .card {
     background-color: #ffffff;
-    border-radius: 12px;
+    border-radius: 30px;
     overflow: hidden;
-    width: 360px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     /* altura uniforme */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -105,6 +103,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    padding: 20px;
 }
 
 /* Hacer que la sección que contiene #category esté pegada al header
@@ -124,12 +123,14 @@ section {
 
 /*  --- Imagen del producto --- */
 .card img {
-    width: 100%;
-    height: 180px;
+    width: 300px;
+    height: 220px;
     /* tamaño fijo */
     object-fit: cover;
     /* recorta sin deformar */
+    border-radius: 10px;
 }
+
 
 /*  --- Texto y contenido --- */
 .card h2 {
@@ -139,7 +140,7 @@ section {
 }
 
 .card p {
-    font-size: 0.9rem;
+    font-size: 15px;
     color: #555;
     padding: 0 10px;
     flex-grow: 1;
@@ -187,7 +188,8 @@ section {
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    width: 280px;
+    width: 360px;
+    height: 400px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
@@ -200,7 +202,7 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* --- Texto --- */
@@ -231,7 +233,7 @@ section {
     text-decoration: none;
     padding: 10px 14px;
     border-radius: 8px;
-    font-weight: 500;
+    font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
@@ -293,4 +295,12 @@ section {
     text-align: center;
     width: 100%;
     grid-column: 1 / -1;
+}
+/* oculta el primer item de menú */
+header nav ul li:first-child { display: none; }
+
+/* o si quieres ocultar todo el nav */
+header nav { display: none;
+ }
+
 }
