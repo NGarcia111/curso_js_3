@@ -9,24 +9,30 @@ const categoriasBtn = categorylist.map(categoria => {
 
 listaCategoria.innerHTML = categoriasBtn.join("");
 
+let productosFiltrados = data
+
 // Función que se llama desde el onclick
 function filtrarYMostrar(categoria) {
-    const productosFiltrados = filtrarPorCategoria(categoria);
+    productosFiltrados = filtrarPorCategoria(categoria);
     mostrarCards(productosFiltrados);
 };
 
 
 function filtrarPorCategoria(categoria) {
     if (categoria === "Todos") {
-        return newdata;
+        return data;
     }
-    return newdata.filter(producto =>
+    return data.filter(producto =>
         producto.category.includes(categoria)
     )
 };
 
 // Función para renderizar las tarjetas
 function mostrarCards(productos) {
+    if (productos.length === 0) {
+        main.innerHTML = `<h2 class="no-results">Lo sentimos, no encontramos coincidencias</h2>`;
+        return;
+    }
     const cards = productos.map(producto => {
         return `
         <div class="card">
@@ -43,11 +49,11 @@ function mostrarCards(productos) {
     main.innerHTML = cards.join("");
 };
 
-mostrarCards(newdata);
+mostrarCards(data);
 
 function realizarBusqueda() {
     const terminoBusqueda = buscador.value.toLowerCase();
-    const filtrados = newdata.filter(elemento =>
+    const filtrados = productosFiltrados.filter(elemento =>
         elemento.name.toLowerCase().includes(terminoBusqueda) ||
         elemento.short_description.toLowerCase().includes(terminoBusqueda) ||
         elemento.long_description.toLowerCase().includes(terminoBusqueda) ||
@@ -61,6 +67,6 @@ buscador.addEventListener("input", realizarBusqueda);
 // Función para limpiar el buscador
 btnLimpiar.addEventListener("click", () => {
     buscador.value = ""; // Limpiar el input
-    mostrarCards(newdata); // Mostrar todos los productos
+    mostrarCards(data); // Mostrar todos los productos
     buscador.focus(); // Pone el foco de vuelta en el input
 });

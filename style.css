@@ -287,3 +287,10 @@ section {
     outline: none;
     box-shadow: 0 6px 16px rgba(0, 82, 204, 0.12);
 }
+
+.no-results {
+    color: white;
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / -1;
+}

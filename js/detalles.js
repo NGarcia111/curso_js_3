@@ -3,7 +3,7 @@ const params = new URLSearchParams(window.location.search);
 const idProducto = parseInt(params.get("prod"));
 
 // 2. Buscar el producto en el array
-const producto = newdata.find(p => p.id === idProducto);
+const producto = data.find(p => p.id === idProducto);
 
 // 3. Mostrar los detalles en el HTML
 const main = document.getElementById("detalle-producto");
