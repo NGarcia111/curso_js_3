@@ -2,8 +2,12 @@
 const params = new URLSearchParams(window.location.search);
 const idProducto = parseInt(params.get("prod"));
 
+// if idproduct no in [1, ... 25]
+
 // 2. Buscar el producto en el array
 const producto = data.find(p => p.id === idProducto);
+
+// if producto // Si no se encontro
 
 // 3. Mostrar los detalles en el HTML
 const main = document.getElementById("detalle-producto");
