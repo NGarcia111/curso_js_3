@@ -1,4 +1,4 @@
-# Grupo 3 Cursos Javascript Intermedio BetaHub
+﻿# Grupo 3 Cursos Javascript Intermedio BetaHub
 
 
 ## 📚 Índice de Clases
@@ -10,9 +10,6 @@
 - [Clase 13 - Arrays](./CLASES/Clase%2013%20-%20Arrays)
 - [Métodos ArrayClase 15](./CLASES/Métodos%20ArrayClase%2015)
 - [Clase extra - Ejercicio 1 SPRINT 2](./SPRINT2/Ejercicio1/index.html)
-
-
-
 
  ## 🧪 Ejercicios por clase
 Los ejercicios prácticos están integrados dentro de cada carpeta de clase, organizados según el tema que se está estudiando. Esto permite que cada clase tenga sus propios ejemplos y prácticas sin estar dispersos por el proyecto.
