@@ -83,7 +83,6 @@ function realizarBusqueda() {
         mostrarBoton();
     } else {
         quitarBoton();
-        mostrarCards(productosFiltrados);
     }
     const filtrados = productosFiltrados.filter(elemento =>
         elemento.name.toLowerCase().includes(terminoBusqueda) ||
