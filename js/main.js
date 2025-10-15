@@ -11,12 +11,13 @@ listaCategoria.innerHTML = categoriasBtn.join("");
 
 let productosFiltrados = data
 
+mostrarCards(data); //Mostrar Data apenas se cargue la pagina
+
 // Función que se llama desde el onclick
 function filtrarYMostrar(categoria) {
     productosFiltrados = filtrarPorCategoria(categoria);
     mostrarCards(productosFiltrados);
 };
-
 
 function filtrarPorCategoria(categoria) {
     if (categoria === "Todos") {
@@ -49,8 +50,6 @@ function mostrarCards(productos) {
     main.innerHTML = cards.join("");
 };
 
-mostrarCards(data);
-
 function limpiarBuscador() {
     buscador.value = ""; // Limpiar el input
     mostrarCards(data); // Mostrar todos los productos
@@ -63,7 +62,7 @@ function mostrarBoton() {
     if (!btnLimpiar) {
         const btn = document.createElement("button");
         btn.id = "btn-limpiar";
-        btn.innerHTML = "❌";
+        btn.innerHTML = "Limpiar";
         btn.addEventListener("click", limpiarBuscador);
         barraBusqueda.appendChild(btn);
     }
@@ -94,6 +93,4 @@ function realizarBusqueda() {
 }
 
 
-buscador.addEventListener("input", realizarBusqueda);
-
-// Función para limpiar el buscador
+buscador.addEventListener("input", realizarBusqueda); // Es ineficiente para muchos datos

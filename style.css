@@ -1,12 +1,12 @@
 /*  --- Estilo general --- */
 body {
-     /* Degradado diagonal de color morado a rosa */
+    /* Degradado diagonal de color morado a rosa */
     background: linear-gradient(135deg, #f1f1f1, #576070);
     min-height: 100vh;
     margin: 0;
     color: white;
     font-family: Arial, sans-serif;
-
+}
 
 header {
     text-align: center;
@@ -81,7 +81,8 @@ h1 {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
-    gap: 25px;
+    row-gap: 25px;
+    column-gap: 5%;
     padding: 30px;
     justify-items: center;
     margin-top: 20px;
@@ -106,8 +107,6 @@ main {
     padding: 20px;
 }
 
-/* Hacer que la sección que contiene #category esté pegada al header
-   y comparta el mismo ancho máximo visual. */
 section {
     margin-top: 0;
     /* pegada al header */
@@ -247,25 +246,16 @@ section {
     background-color: #0072ff;
 }
 
-/* --- Estilos para contenedor de categorías --- */
-/* En el HTML `#category` es el propio <ul>, no un contenedor padre con un <ul> dentro. */
 #category {
-    /* Contenedor principal de categorías: ancho consistente con header */
     text-align: left;
-    /* por defecto el contenido (botones) alineados a la izquierda */
     padding: 14px 18px;
     background-color: rgba(255, 255, 255, 0.95);
     margin: 0 auto 18px auto;
     max-width: 1100px;
-    /* coincide con el max-width que usamos en header/section */
     border-radius: 0 0 12px 12px;
-    /* apariencia de continuación del header */
-
-    /* Layout interno */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* alinear a la izquierda */
     gap: 10px;
     list-style: none;
     margin: 0;
@@ -301,12 +291,4 @@ section {
     text-align: center;
     width: 100%;
     grid-column: 1 / -1;
-}
-/* oculta el primer item de menú */
-header nav ul li:first-child { display: none; }
-
-/* o si quieres ocultar todo el nav */
-header nav { display: none;
-    }
-
 }
