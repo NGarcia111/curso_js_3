@@ -1,7 +1,7 @@
 const main = document.querySelector("main");
 const buscador = document.getElementById("buscador");
-const btnLimpiar = document.getElementById("btn-limpiar");
 const listaCategoria = document.getElementById("category");
+const barraBusqueda = document.querySelector(".search-container");
 
 const categoriasBtn = categorylist.map(categoria => {
     return `<li><button class="category-btn" onclick="filtrarYMostrar('${categoria}')">${categoria}</button></li>`;
@@ -51,8 +51,40 @@ function mostrarCards(productos) {
 
 mostrarCards(data);
 
+function limpiarBuscador() {
+    buscador.value = ""; // Limpiar el input
+    mostrarCards(data); // Mostrar todos los productos
+    quitarBoton(); // Eliminar el botón
+    buscador.focus(); // Pone el foco de vuelta en el input
+}
+
+function mostrarBoton() {
+    const btnLimpiar = document.getElementById("btn-limpiar");
+    if (!btnLimpiar) {
+        const btn = document.createElement("button");
+        btn.id = "btn-limpiar";
+        btn.innerHTML = "❌";
+        btn.addEventListener("click", limpiarBuscador);
+        barraBusqueda.appendChild(btn);
+    }
+}
+
+function quitarBoton() {
+    const btnLimpiar = document.getElementById("btn-limpiar");
+    if (btnLimpiar) {
+        btnLimpiar.removeEventListener("click", limpiarBuscador);
+        btnLimpiar.remove();
+    }
+}
+
 function realizarBusqueda() {
     const terminoBusqueda = buscador.value.toLowerCase();
+    if (terminoBusqueda !== "") {
+        mostrarBoton();
+    } else {
+        quitarBoton();
+        mostrarCards(productosFiltrados);
+    }
     const filtrados = productosFiltrados.filter(elemento =>
         elemento.name.toLowerCase().includes(terminoBusqueda) ||
         elemento.short_description.toLowerCase().includes(terminoBusqueda) ||
@@ -62,11 +94,7 @@ function realizarBusqueda() {
     mostrarCards(filtrados);
 }
 
+
 buscador.addEventListener("input", realizarBusqueda);
 
 // Función para limpiar el buscador
-btnLimpiar.addEventListener("click", () => {
-    buscador.value = ""; // Limpiar el input
-    mostrarCards(data); // Mostrar todos los productos
-    buscador.focus(); // Pone el foco de vuelta en el input
-});
