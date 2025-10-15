@@ -1,7 +1,8 @@
-# Grupo 3 Cursos Javascript Intermedio BetaHub
+﻿# Grupo 3 Cursos Javascript Intermedio BetaHub
 
 
 ## 📚 Índice de Clases
+
 - [Clase 7 - Estructuras de Control I](./CLASES/Clase%207%20-%20Estructuras%20de%20Control%20l)
 - [Clase 8 - Estructuras de Control II](./CLASES/Clase%208%20-%20Estructuras%20de%20Control%20II)
 - [Clase 10 - Funciones](./CLASES/Clase%2010%20-%20Funciones)
