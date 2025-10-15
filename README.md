@@ -11,7 +11,7 @@
 - [Métodos ArrayClase 15](./CLASES/Métodos%20ArrayClase%2015)
 - [Clase extra - Ejercicio 1 SPRINT 2](./SPRINT2/Ejercicio1/index.html)
 
- ## 🧪 Ejercicios por clase
+## 🧪 Ejercicios por clase
 Los ejercicios prácticos están integrados dentro de cada carpeta de clase, organizados según el tema que se está estudiando. Esto permite que cada clase tenga sus propios ejemplos y prácticas sin estar dispersos por el proyecto.
 📌 Ejemplos:
 - calculadora.js se encuentra en Clase 7 - Estructuras de Control I
